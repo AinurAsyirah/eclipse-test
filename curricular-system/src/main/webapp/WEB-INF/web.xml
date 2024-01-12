@@ -3,7 +3,17 @@
   xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee"
   xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
   version="5.0">
- <servlet>
+ 
+    <display-name>curricular-system</display-name>
+    <welcome-file-list>
+      <welcome-file>signUpStudent.html</welcome-file>
+      <welcome-file>signUpStudent.htm</welcome-file>
+      <welcome-file>signUpStudent.jsp</welcome-file>
+      <welcome-file>default.html</welcome-file>
+      <welcome-file>default.htm</welcome-file>
+      <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
     <description></description>
     <display-name>SignUpStudentController</display-name>
     <servlet-name>SignUpStudentController</servlet-name>
@@ -13,13 +23,4 @@
     <servlet-name>SignUpStudentController</servlet-name>
     <url-pattern>/SignUpStudentController</url-pattern>
   </servlet-mapping>
-  <display-name>curricular-system</display-name>
-  <welcome-file-list>
-    <welcome-file>signup.html</welcome-file>
-    <welcome-file>signup.htm</welcome-file>
-    <welcome-file>signup.jsp</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>
 </web-app>
