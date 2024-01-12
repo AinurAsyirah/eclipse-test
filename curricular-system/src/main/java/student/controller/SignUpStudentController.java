@@ -22,7 +22,7 @@ import student.model.StudentBean;
 /**
  * Servlet implementation class SignUpStudentController
  */
-@WebServlet("/SignUpStudentController") 
+
 public class SignUpStudentController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private StudentDAO dao;	
