@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class ConnectionManager {
     static Connection con;
     public static Connection getConnection() {
-        String jdbcURL = "jdbc:postgresql://ec2-54-156-20-209.compute-1.amazonaws.com:5432/d5o47ut27ivedq";
-        String username = "dwaqzftdrhbnrs";
-        String password = "f4ddd08cfe661b77378cfbceeee2bd247c69c96b23113c32de63f42114f74fec";
+        String jdbcURL = "jdbc:postgresql://ec2-34-193-110-25.compute-1.amazonaws.com:5432/dfj1kps082792l";
+        String username = "onlpggfjkwcuib";
+        String password = "5f4a76e972318d12281bf8622c87384c5a8e9972a68145f40402e83e85004b7b";
 
         try {
             con = DriverManager.getConnection(jdbcURL, username, password);
