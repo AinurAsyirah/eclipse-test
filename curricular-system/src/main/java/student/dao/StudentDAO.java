@@ -95,4 +95,32 @@ public class StudentDAO {
 		}
 		return student;
 	}
+
+	public static StudentBean findByLogin(String username, String password) {
+		// TODO Auto-generated method stub
+		StudentBean student = null;
+		try {
+			Connection conn = ConnectionManager.getConnection();
+			PreparedStatement ps = conn.prepareStatement("SELECT * FROM STUDENT WHERE studentic=? AND studentpassword=?");
+			ps.setString(1, username);
+			ps.setString(2, password);
+			
+			ResultSet rs = ps.executeQuery();
+			      if(rs.next()) {
+			        student= new StudentBean();
+			        student.setStudentName(rs.getString("studentIC"));
+			        student.setStudentPassword(rs.getString("studentPassword"));
+			        //student.setStudentName(rs.getString("studentName"));
+			      }
+			      //con.close();
+			      } catch (Exception e) {
+			e.printStackTrace();
+		}
+		return student;
+	}
+
+	public static StudentBean getStudentById(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
