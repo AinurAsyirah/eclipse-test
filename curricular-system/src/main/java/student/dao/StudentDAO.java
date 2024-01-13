@@ -49,10 +49,10 @@ public class StudentDAO {
 			ps.setString(3, studentEmail);
 			ps.setString(4, studentPhone);
 			//ps.setString(5, studentDOB);
-			ps.setString(6, studentGender);
-			ps.setString(7, studentClass);
-			ps.setString(8, studentAddress);
-			ps.setString(9, studentPassword);
+			ps.setString(5, studentGender);
+			ps.setString(6, studentClass);
+			ps.setString(7, studentAddress);
+			ps.setString(8, studentPassword);
 			
 			//execute query
 			ps.executeQuery();
