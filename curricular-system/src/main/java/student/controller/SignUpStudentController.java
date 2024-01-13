@@ -48,7 +48,7 @@ public class SignUpStudentController extends HttpServlet {
 		s.setStudentName(request.getParameter("signup-nama"));
 		s.setStudentEmail(request.getParameter("signup-email"));
 		s.setStudentPhone(request.getParameter("signup-notel"));
-		s.setStudentDOB(request.getParameter("signup-tarikhlahir"));
+		//s.setStudentDOB(request.getParameter("signup-tarikhlahir"));
 		s.setStudentGender(request.getParameter("signup-jantina"));
 		s.setStudentClass(request.getParameter("signup-kelas"));
 		s.setStudentPassword(request.getParameter("signup-password"));

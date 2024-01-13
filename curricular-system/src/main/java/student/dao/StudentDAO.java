@@ -43,12 +43,12 @@ public class StudentDAO {
 		try {
 			con=ConnectionManager.getConnection();
 			
-			ps= con.prepareStatement("INSERT INTO public.student(studentic, studentname, studentemail, studentphone, studentdob, studentgender, studentclass, studentaddress, studentpassword) VALUES (?,?,?,?,?,?,?,?,?)");
+			ps= con.prepareStatement("INSERT INTO public.student(studentic, studentname, studentemail, studentphone, studentgender, studentclass, studentaddress, studentpassword) VALUES (?,?,?,?,?,?,?,?)");
 			ps.setString(1,  studentIC);
 			ps.setString(2,  studentName);
 			ps.setString(3, studentEmail);
 			ps.setString(4, studentPhone);
-			ps.setString(5, studentDOB);
+			//ps.setString(5, studentDOB);
 			ps.setString(6, studentGender);
 			ps.setString(7, studentClass);
 			ps.setString(8, studentAddress);
