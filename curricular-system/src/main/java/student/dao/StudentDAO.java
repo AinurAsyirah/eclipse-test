@@ -101,7 +101,7 @@ public class StudentDAO {
 		StudentBean student = null;
 		try {
 			Connection conn = ConnectionManager.getConnection();
-			PreparedStatement ps = conn.prepareStatement("SELECT * FROM STUDENT WHERE studentic=? AND studentpassword=?");
+			PreparedStatement ps = conn.prepareStatement("SELECT * FROM student WHERE studentic=? AND studentpassword=?");
 			ps.setString(1, username);
 			ps.setString(2, password);
 			
@@ -120,7 +120,30 @@ public class StudentDAO {
 	}
 
 	public static StudentBean getStudentById(String username) {
+		StudentBean student = new StudentBean();
+		try {
+			con= ConnectionManager.getConnection();
+			
+			ps= con.prepareStatement("SELECT * FROM student WHERE studentic=?");
+			ps.setString(1, username);
+			
+			rs= ps.executeQuery();
+			if(rs.next()) {
+				student.setStudentIC(rs.getString("studentIC"));
+				student.setStudentName(rs.getString("studentName"));
+				student.setStudentEmail(rs.getString("studentEmail"));
+				student.setStudentPhone(rs.getString("studentPhone"));
+				student.setStudentDOB(rs.getString("studentDOB"));
+				student.setStudentGender(rs.getString("studentGender"));
+				student.setStudentClass(rs.getString("studentClass"));
+				student.setStudentPassword(rs.getString("studentPassword"));
+				student.setStudentAddress(rs.getString("studentAddress"));
+			}
+			con.close();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 		// TODO Auto-generated method stub
-		return null;
+		return student;
 	}
 }
