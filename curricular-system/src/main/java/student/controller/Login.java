@@ -14,14 +14,14 @@ import student.model.StudentBean;
 /**
  * Servlet implementation class LoginController
  */
-@WebServlet("/LoginController")
-public class LoginController extends HttpServlet {
+@WebServlet("/Login")
+public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private StudentDAO dao; 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public LoginController() {
+    public Login() {
         super();
         dao= new StudentDAO();
         // TODO Auto-generated constructor stub
