@@ -5,9 +5,9 @@
   version="5.0">
     <display-name>curricular-system</display-name>
     <welcome-file-list>
-      <welcome-file>signUpStudent.html</welcome-file>
-      <welcome-file>signUpStudent.htm</welcome-file>
-      <welcome-file>signUpStudent.jsp</welcome-file>
+      <welcome-file>signin.html</welcome-file>
+      <welcome-file>signin.htm</welcome-file>
+      <welcome-file>signin.jsp</welcome-file>
       <welcome-file>default.html</welcome-file>
       <welcome-file>default.htm</welcome-file>
       <welcome-file>default.jsp</welcome-file>
