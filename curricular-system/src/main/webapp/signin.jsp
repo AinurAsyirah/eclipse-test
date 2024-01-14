@@ -83,7 +83,7 @@
                 <!-- Sign In Form -->
                 <!-- jQuery Validation functionality is initialized with .js-validation-signin class in js/pages/op_auth_signin.min.js which was auto compiled from _js/pages/op_auth_signin.js -->
                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                <form class="js-validation-signin px-30" action="LoginController" method="post">
+                <form class="js-validation-signin px-30" action="dashboardStudent.jsp" method="post">
                   <div class="form-group row">
                     <div class="col-12">
                       <div class="form-material floating">
