@@ -53,7 +53,7 @@ public class Login extends HttpServlet {
 			HttpSession session = request.getSession();
 			session.setAttribute("Login", student);
 			request.setAttribute("dashboard", stud);
-			response.sendRedirect("dashboardStudent.jsp");
+			response.sendRedirect("dashboardStudent.jsp?studentic=" + username +"&studentname=" + stud.getStudentName());
 		}else {
 			//invalid login, show error message
 			request.setAttribute("error", "Invalid login");
